@@ -1,0 +1,14 @@
+{
+   "name": "memcached",
+   "description": "Memcached recipe",
+   "default_attributes": {
+   },
+   "json_class": "Chef::Role",
+   "run_list": [
+      "memcached-tlq",
+      "monit_configs-tlq::memcached"
+   ],
+   "chef_type": "role",
+   "override_attributes": {
+   }
+}

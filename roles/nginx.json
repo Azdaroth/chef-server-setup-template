@@ -1,0 +1,38 @@
+{
+   "name": "nginx-server",
+   "description": "Nginx server",
+   "default_attributes": {
+      "nginx": {
+         "dir": "/etc/nginx",
+         "passenger": {
+            "version": "4.0.44",
+            "ruby": "/usr/local/rvm/gems/ruby-2.1.2/wrappers/ruby",
+            "root": "/usr/local/rvm/gems/ruby-2.1.2/gems/passenger-4.0.44",
+            "gem_binary": "/usr/local/rvm/wrappers/ruby-2.1.2/gem",
+            "max_pool_size": "10",
+            "min_instances": "2"
+         },
+         "configure_flags": [
+            "--add-module=/usr/local/rvm/gems/ruby-2.1.2/gems/passenger-4.0.44/ext/nginx"
+         ],
+         "source": {
+            "modules": [
+               "nginx::http_stub_status_module",
+               "nginx::http_gzip_static_module",
+               "nginx::http_ssl_module",
+               "nginx::passenger"
+            ] 
+         }
+      }
+   },
+   "json_class": "Chef::Role",
+   "run_list": [
+      "help-nginx-passenger",
+      "nginx::source",
+      "nginx::passenger",
+      "monit_configs-tlq::nginx"
+   ],
+   "chef_type": "role",
+   "override_attributes": {
+   }
+}

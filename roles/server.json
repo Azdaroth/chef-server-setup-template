@@ -1,0 +1,48 @@
+// Things we want standard on all server boxes, primarily:
+// - Security
+// - Look and feel
+// - default users, groups etc
+// - you will have to manually restart ssh service: /etc/init.d/ssh restart
+{
+  "name": "server",
+  "description": "A server of some kind...",
+  "default_attributes": {
+    "locale": {
+      "lang": "en_US.UTF-8",
+      "lc_all": "en_US.UTF-8"
+    },
+    "authorization": {
+      "sudo": {
+        // everyone in the group sysadmin gets sudo rights
+        "groups": ["sysadmin"],
+        // the deploy user specifically gets sudo rights
+        // whether a user with sudo rights has to enter their
+        // password when using sudo
+        "passwordless": "false"
+      }
+      
+    },
+    "firewall_allow":[],
+    "monit": {
+      "enable_emails" : false,    
+    },
+    "monit_address" : "monit.hostname.pl"
+  },
+  "json_class": "Chef::Role",
+  "run_list": [
+    "openssl",
+    "build-essential",
+    "chef-solo-search",    
+    "users::sysadmins",
+    "sudo",
+    "ssh_key_gen",
+    "basic-security-modified",    
+    "look-and-feel-modified",
+    "monit-tlq",
+    "monit_configs-tlq::system"
+  ],
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}
+

@@ -1,0 +1,33 @@
+{
+  "name": "postgres-server",
+  "description": "Postgres database server",
+  "default_attributes": {
+    "postgresql": {
+      "version": "9.3",
+      "initdb_locale": "en_US.UTF-8",
+      "data_directory": "/home/data/postgresql/9.3/main",
+      "config": {
+        "ssl": "false"
+      },
+      "pg_hba": [
+        {"type": "local", "db": "all", "user" :"postgres", "addr" :"", "method" :"md5"},
+        {"type": "local", "db":"all", "user":"all", "addr":"", "method":"md5"},
+        {"type": "host", "db":"all", "user":"all", "addr":"127.0.0.1/32", "method":"md5"},
+        {"type": "host", "db":"all", "user":"all", "addr":"::1/128", "method":"md5"}
+      ]
+    }
+  },
+  "json_class": "Chef::Role",
+  "run_list": [
+    "prepare-postgres",    
+    "postgresql::apt_pgdg_postgresql",
+    "postgresql::client",
+    "postgresql::server",
+    "postgresql::server_debian",
+    "postgresql::config_initdb",
+    "postgresql::config_pgtune",
+    "postgresql::contrib",
+    "monit_configs::postgres"
+  ],
+  "chef_type": "role"
+}

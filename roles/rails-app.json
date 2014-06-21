@@ -1,0 +1,35 @@
+  {
+  "name": "rails-app",
+  "description": "Something which runs rails apps.",
+  "default_attributes": {
+    "rvm": {
+      "group_users": ["deploy"],
+      "default_ruby": "ruby-2.1.2",
+      "rubies": [
+        {
+          "version": "ruby-2.1.0",
+          "rubygems_version": "2.1.0"
+        },
+        {
+          "version": "ruby-2.1.2",
+          "rubygems_version": "2.1.0"
+        }
+      ],
+      "gems": { 
+        "ruby-2.1.2": [
+          { "name": "bundler", "version": "1.6.0" },
+          { "name": "passenger", "version": "4.0.44" }
+        ]
+      }
+    }
+   },
+  "json_class": "Chef::Role",
+  "run_list": [
+    "rails_gem_dependencies-tlq",
+    "rvm::system",
+    "rvm::gem_package"
+  ],
+  "chef_type": "role",
+  "override_attributes": {
+  }
+}

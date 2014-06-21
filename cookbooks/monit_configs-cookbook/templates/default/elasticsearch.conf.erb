@@ -1,0 +1,7 @@
+#Monitoring Elasticsearch Service
+
+check process elasticsearch with pidfile <%= node.elasticsearch[:pid_file] %>
+  start program = "/etc/init.d/elasticsearch restart"
+  stop program  = "/etc/init.d/elasticsearch stop"
+  if 15 restarts within 15 cycles then timeout
+  

@@ -1,0 +1,39 @@
+daemonize yes
+pidfile /var/run/redis/redis-server.pid
+logfile /var/log/redis/redis-server.log
+
+port 6379
+<% unless node[:redis] && node[:redis][:dont_bind] %>
+  bind 127.0.0.1
+<% end %>
+timeout 300
+
+loglevel notice
+
+## Default configuration options
+databases 16
+
+save 900 1
+save 300 10
+save 60 10000
+
+rdbcompression yes
+dbfilename dump.rdb
+
+dir /etc/redis/
+appendonly no
+
+# prevent redis from ever using 400MB of memory
+maxmemory 419430400
+
+# when max memory is reached, go through all keys and delete the
+# "least recently used" ones. NOTE: this doesn't do quite what it
+# sounds like, in practice Redis takes a random sample of keys
+# (see below) and of the sample it takes, deletes the one which was
+# least recently used.
+maxmemory-policy allkeys-lru
+
+# when looking for a key to expire on maxmem, randomly pick 10 
+# and delete the one with the highest idle time (least recently 
+# accessed)
+maxmemory-samples 10

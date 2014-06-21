@@ -1,0 +1,178 @@
+{
+  "sources": {
+    "build-essential": {
+      "locked_version": "2.0.5",
+      "git": "https://github.com/opscode-cookbooks/build-essential",
+      "ref": "400968913bfa8a4a5c9783b383c3b63899f2fe72"
+    },
+    "sudo": {
+      "locked_version": "2.6.1",
+      "git": "https://github.com/opscode-cookbooks/sudo.git",
+      "ref": "8bbdff7302f7a86e18d1a3f029813c665b53b322"
+    },
+    "basic-security-tlq": {
+      "locked_version": "0.0.1",
+      "git": "git@github.com:TalkingQuickly/basic_security-tlq.git",
+      "ref": "903e2a0f1a047331eb47c7a979ff1daf583713ad"
+    },
+    "look-and-feel-tlq": {
+      "locked_version": "0.0.1",
+      "git": "git@github.com:TalkingQuickly/look_and_feel-tlq.git",
+      "ref": "bf3b58e4233af1455a615f66a61cd104d43415b6"
+    },
+    "users": {
+      "locked_version": "1.7.1",
+      "git": "https://github.com/opscode-cookbooks/users.git",
+      "ref": "fca9a42ab44dadbb98432c931dfc6c049ecc23ce"
+    },
+    "chef-solo-search": {
+      "locked_version": "0.5.1",
+      "git": "https://github.com/edelight/chef-solo-search",
+      "ref": "848fad1461c78fd502975f1df2e14eed12610635"
+    },
+    "memcached-tlq": {
+      "locked_version": "0.0.2",
+      "git": "git@github.com:TalkingQuickly/memcached-tlq.git",
+      "ref": "8ac6e2c68c32f79efcc4c19c7099b7db72ab158d"
+    },
+    "redis-tlq": {
+      "locked_version": "0.0.6",
+      "git": "git@github.com:TalkingQuickly/redis-tlq.git",
+      "ref": "0fd9ee3dcc7bd01f37e2e057b146595a7849e6aa"
+    },
+    "monit_configs-tlq": {
+      "locked_version": "0.0.5",
+      "git": "git@github.com:TalkingQuickly/monit_configs-tlq.git",
+      "ref": "f3fb019500fb78b281bdf3a4dfba8a1161effcae"
+    },
+    "monit-tlq": {
+      "locked_version": "0.3.6",
+      "git": "git@github.com:TalkingQuickly/monit-tlq.git",
+      "ref": "1418ab881e7119b59de9c0722b58faefa5e765be"
+    },
+    "rails_gem_dependencies-tlq": {
+      "locked_version": "0.0.2",
+      "git": "git@github.com:TalkingQuickly/rails_gem_dependencies-tlq.git",
+      "ref": "86d443f34b93f59dc7a4ed7e51f46a42b2c79eb1"
+    },
+    "nginx": {
+      "locked_version": "2.7.3",
+      "git": "https://github.com/opscode-cookbooks/nginx",
+      "ref": "d58074b87ca41418bacaa9444579d61b0500cf36"
+    },
+    "postgresql": {
+      "locked_version": "3.4.1",
+      "git": "https://github.com/jackpine/postgresql/",
+      "ref": "3b73c125b9130c0534fdf708f13f84f18b411fa9"
+    },
+    "mongodb": {
+      "locked_version": "0.16.1",
+      "git": "https://github.com/edelight/chef-mongodb",
+      "ref": "0eb955c50a172958b6719dc3fedfcd65897a19e7"
+    },
+    "rvm": {
+      "locked_version": "0.9.2",
+      "git": "https://github.com/fnichol/chef-rvm",
+      "ref": "dd58087e7399097a9b9df4e2e7235908aace2afd"
+    },
+    "locales": {
+      "locked_version": "0.2.2",
+      "git": "https://github.com/phbergsmann/chef-locales",
+      "ref": "473ff078177e5720d0d782e69a64ceb398be5938"
+    },
+    "locale": {
+      "locked_version": "1.0.1",
+      "git": "https://github.com/hw-cookbooks/locale",
+      "ref": "aa46ee2b7f810378a99f3244b48c51e2c814a43f"
+    },
+    "java": {
+      "locked_version": "1.21.0"
+    },
+    "elasticsearch": {
+      "locked_version": "0.3.10",
+      "git": "https://github.com/elasticsearch/cookbook-elasticsearch",
+      "ref": "c112a02e50f40dfd93bbe9326e2e695e4a06e59a"
+    },
+    "ssh_key_gen-cookbook": {
+      "locked_version": "0.0.1",
+      "git": "https://github.com/Azdaroth/ssh_key_gen-cookbook",
+      "ref": "8e4c19778dc089c494b452f39cbf34b99f491047"
+    },
+    "prepare-postgres-cookbook": {
+      "locked_version": "0.0.1",
+      "git": "https://github.com/Azdaroth/prepare-postgres-cookbook",
+      "ref": "fd9bc8b374d90bcab180f14c055148b96c798b28"
+    },
+    "monit_configs-cookbook": {
+      "locked_version": "0.0.1",
+      "git": "https://github.com/Azdaroth/monit_configs-cookbook",
+      "ref": "77e5290ee5c2335de4ef3f6f9e88807f70e15879"
+    },
+    "look-and-feel-modified": {
+      "locked_version": "0.0.1",
+      "git": "https://github.com/Azdaroth/look-and-feel-modified",
+      "ref": "d9ca91b515f9e2b84ca650de09d761c823956e07"
+    },
+    "help-nginx-passenger-cookbook": {
+      "locked_version": "0.0.1",
+      "git": "https://github.com/Azdaroth/help-nginx-passenger-cookbook",
+      "ref": "7abf3f07393f7feec8f19b5e168078e98873f5ab"
+    },
+    "basic-security-modified-cookbook": {
+      "locked_version": "0.0.1",
+      "git": "https://github.com/Azdaroth/basic-security-modified-cookbook",
+      "ref": "3853dfa7620b37097c0912c5d2291adb305b37da"
+    },
+    "apt": {
+      "locked_version": "2.3.8"
+    },
+    "bluepill": {
+      "locked_version": "2.3.1"
+    },
+    "rsyslog": {
+      "locked_version": "1.12.2"
+    },
+    "ohai": {
+      "locked_version": "2.0.1"
+    },
+    "runit": {
+      "locked_version": "1.5.10"
+    },
+    "yum": {
+      "locked_version": "3.1.4"
+    },
+    "yum-epel": {
+      "locked_version": "0.3.4"
+    },
+    "openssl": {
+      "locked_version": "1.1.0"
+    },
+    "python": {
+      "locked_version": "1.4.6"
+    },
+    "chef_gem": {
+      "locked_version": "0.1.0"
+    },
+    "xml": {
+      "locked_version": "1.2.6"
+    },
+    "chef-sugar": {
+      "locked_version": "2.0.0"
+    },
+    "monit": {
+      "locked_version": "0.7.1"
+    },
+    "ark": {
+      "locked_version": "0.9.0"
+    },
+    "windows": {
+      "locked_version": "1.31.0"
+    },
+    "chef_handler": {
+      "locked_version": "1.1.6"
+    },
+    "7-zip": {
+      "locked_version": "1.0.2"
+    }
+  }
+}

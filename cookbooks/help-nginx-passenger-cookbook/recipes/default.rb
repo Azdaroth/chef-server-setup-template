@@ -1,0 +1,2 @@
+# package "rubygems"
+package "rake"

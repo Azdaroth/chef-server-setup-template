@@ -1,0 +1,20 @@
+{
+   "name": "elasticsearch-server",
+   "description": "Elastic Search server",
+   "default_attributes": {
+      "elasticsearch": {
+         "allocated_memory": "100m"
+      }
+   },
+   "json_class": "Chef::Role",
+   "run_list": [
+      "java",
+      "elasticsearch",
+      "monit_configs::elasticsearch"
+   ],
+   "java": {
+    "install_flavor": "openjdk",
+    "jdk_version": "7"
+  },
+   "chef_type": "role"
+}
