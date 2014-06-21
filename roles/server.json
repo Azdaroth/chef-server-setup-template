@@ -24,7 +24,7 @@
     },
     "firewall_allow":[],
     "monit": {
-      "enable_emails" : false,    
+      "enable_emails" : false
     },
     "monit_address" : "monit.hostname.pl"
   },
