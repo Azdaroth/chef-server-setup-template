@@ -1,6 +1,6 @@
 == README
 
-Super quickly guide for the server setup which works with Ubuntu 14.04 (details will be covered in a blog post soon)
+Super quick guide for the server setup which works with Ubuntu 14.04 (details will be covered in a blog post soon)
 
 * Clone repository
 
