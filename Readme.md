@@ -26,7 +26,7 @@ Super quick guide for the server setup which works with Ubuntu 14.04 (details wi
 
 * knife solo cook root@server-ip
 
-* Alternatively, if you use Vagrant: knife solo prepare vagrant@127.0.0.1 -p 2222 -i /Users/username/.vagrant.d/insecure_private_key (on OS X, not sure about Linux) ; knife solo cook vagrant@127.0.0.1 -p 2222 -i /Users/username/.vagrant.d/insecure_private_key (remember aboy renaming nodes/put_your_ip_address_here.json to 127.0.0.1.json, you may also want to add vagrant user to sudo users in node configuration)
+* Alternatively, if you use Vagrant: knife solo prepare vagrant@127.0.0.1 -p 2222 -i /Users/username/.vagrant.d/insecure_private_key (on OS X, not sure about Linux) ; knife solo cook vagrant@127.0.0.1 -p 2222 -i /Users/username/.vagrant.d/insecure_private_key (remember about renaming nodes/put_your_ip_address_here.json to 127.0.0.1.json, you may also want to add vagrant user to sudo users in node configuration)
 
 * You will probably have to restart sshd service manually (couldn't deal with some exceptions so far)
 
