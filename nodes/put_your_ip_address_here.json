@@ -4,6 +4,8 @@
   "authorization": {
     "sudo": {
       "users": ["deploy"],
+      // everyone in the group sysadmin gets sudo rights
+      "groups": ["sysadmin"],
       "passwordless": false
     } 
   },
@@ -18,10 +20,7 @@
       "hostname" : "hostname"
     },
     "web_interface" : {
-      // access credentials for the web interface. Just
-      // enabling this won't set up the web interface,
-      // it will need either a vhost in nginx os its port
-      // being allowed through ufw
+      // nginx
       "allow" : ["monitUser","monitPassword"]
     }
   },

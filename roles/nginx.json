@@ -5,15 +5,15 @@
       "nginx": {
          "dir": "/etc/nginx",
          "passenger": {
-            "version": "4.0.44",
+            "version": "4.0.45",
             "ruby": "/usr/local/rvm/gems/ruby-2.1.2/wrappers/ruby",
-            "root": "/usr/local/rvm/gems/ruby-2.1.2/gems/passenger-4.0.44",
+            "root": "/usr/local/rvm/gems/ruby-2.1.2/gems/passenger-4.0.45",
             "gem_binary": "/usr/local/rvm/wrappers/ruby-2.1.2/gem",
             "max_pool_size": "10",
             "min_instances": "2"
          },
          "configure_flags": [
-            "--add-module=/usr/local/rvm/gems/ruby-2.1.2/gems/passenger-4.0.44/ext/nginx"
+            "--add-module=/usr/local/rvm/gems/ruby-2.1.2/gems/passenger-4.0.45/ext/nginx"
          ],
          "source": {
             "modules": [

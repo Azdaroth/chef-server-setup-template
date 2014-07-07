@@ -36,7 +36,7 @@
     "users::sysadmins",
     "sudo",
     "ssh_key_gen",
-    "basic-security-modified",    
+    "basic-security-modified",
     "look-and-feel-modified",
     "monit-tlq",
     "monit_configs-tlq::system"

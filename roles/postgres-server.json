@@ -5,7 +5,6 @@
     "postgresql": {
       "version": "9.3",
       "initdb_locale": "en_US.UTF-8",
-      "data_directory": "/home/data/postgresql/9.3/main",
       "config": {
         "ssl": "false"
       },
