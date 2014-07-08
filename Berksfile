@@ -23,7 +23,6 @@ cookbook "java", git: "https://github.com/socrata-cookbooks/java"
 cookbook "elasticsearch", git: "https://github.com/elasticsearch/cookbook-elasticsearch"
 
 cookbook "ssh_key_gen", git: "https://github.com/Azdaroth/ssh_key_gen-cookbook"
-cookbook "prepare-postgres", git: "https://github.com/Azdaroth/prepare-postgres-cookbook"
 cookbook "monit_configs", git: "https://github.com/Azdaroth/monit_configs-cookbook"
 cookbook "look-and-feel-modified", git: "https://github.com/Azdaroth/look-and-feel-modified"
 cookbook "help-nginx-passenger", git: "https://github.com/Azdaroth/help-nginx-passenger-cookbook"

@@ -18,7 +18,6 @@
   },
   "json_class": "Chef::Role",
   "run_list": [
-    "prepare-postgres",    
     "postgresql::apt_pgdg_postgresql",
     "postgresql::client",
     "postgresql::server",
