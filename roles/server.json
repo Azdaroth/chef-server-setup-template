@@ -20,7 +20,6 @@
         // password when using sudo
         "passwordless": "false"
       }
-      
     },
     "firewall_allow":[],
     "monit": {

@@ -29,7 +29,6 @@
       "postgres" : "postgresPassword"
     }
   },
-  // requires changing firewall settings
   "security": {
     "ssh_port": "22"
   },
