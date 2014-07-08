@@ -20,7 +20,6 @@
       "hostname" : "hostname"
     },
     "web_interface" : {
-      // nginx
       "allow" : ["monitUser","monitPassword"]
     }
   },
