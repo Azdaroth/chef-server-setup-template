@@ -7,10 +7,6 @@
   "name": "server",
   "description": "A server of some kind...",
   "default_attributes": {
-    "locale": {
-      "lang": "en_US.UTF-8",
-      "lc_all": "en_US.UTF-8"
-    },
     "authorization": {
       "sudo": {
         // everyone in the group sysadmin gets sudo rights
