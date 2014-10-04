@@ -11,14 +11,14 @@
       "ref": "8bbdff7302f7a86e18d1a3f029813c665b53b322"
     },
     "basic-security-tlq": {
-      "locked_version": "0.0.1",
-      "git": "git@github.com:TalkingQuickly/basic_security-tlq.git",
-      "ref": "903e2a0f1a047331eb47c7a979ff1daf583713ad"
+      "locked_version": "0.0.2",
+      "git": "https://github.com/Azdaroth/basic_security-tlq",
+      "ref": "dd3b395d1b3655cad9e518603ed81af06afb90d0"
     },
     "look-and-feel-tlq": {
-      "locked_version": "0.0.1",
-      "git": "git@github.com:TalkingQuickly/look_and_feel-tlq.git",
-      "ref": "bf3b58e4233af1455a615f66a61cd104d43415b6"
+      "locked_version": "0.0.4",
+      "git": "https://github.com/Azdaroth/look_and_feel-tlq",
+      "ref": "1655e54a68e850909dab894595019c7459a051bf"
     },
     "users": {
       "locked_version": "1.7.1",
@@ -93,35 +93,20 @@
       "git": "https://github.com/elasticsearch/cookbook-elasticsearch",
       "ref": "c112a02e50f40dfd93bbe9326e2e695e4a06e59a"
     },
-    "ssh_key_gen-cookbook": {
+    "ssh_key_gen": {
       "locked_version": "0.0.1",
       "git": "https://github.com/Azdaroth/ssh_key_gen-cookbook",
       "ref": "8e4c19778dc089c494b452f39cbf34b99f491047"
     },
-    "prepare-postgres-cookbook": {
-      "locked_version": "0.0.1",
-      "git": "https://github.com/Azdaroth/prepare-postgres-cookbook",
-      "ref": "fd9bc8b374d90bcab180f14c055148b96c798b28"
-    },
-    "monit_configs-cookbook": {
+    "monit_configs": {
       "locked_version": "0.0.1",
       "git": "https://github.com/Azdaroth/monit_configs-cookbook",
-      "ref": "77e5290ee5c2335de4ef3f6f9e88807f70e15879"
+      "ref": "a72aff8c916741c63173e01523c4bc7e328f684b"
     },
-    "look-and-feel-modified": {
-      "locked_version": "0.0.1",
-      "git": "https://github.com/Azdaroth/look-and-feel-modified",
-      "ref": "d9ca91b515f9e2b84ca650de09d761c823956e07"
-    },
-    "help-nginx-passenger-cookbook": {
+    "help-nginx-passenger": {
       "locked_version": "0.0.1",
       "git": "https://github.com/Azdaroth/help-nginx-passenger-cookbook",
       "ref": "7abf3f07393f7feec8f19b5e168078e98873f5ab"
-    },
-    "basic-security-modified-cookbook": {
-      "locked_version": "0.0.1",
-      "git": "https://github.com/Azdaroth/basic-security-modified-cookbook",
-      "ref": "3853dfa7620b37097c0912c5d2291adb305b37da"
     },
     "apt": {
       "locked_version": "2.3.8"

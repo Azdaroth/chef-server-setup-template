@@ -1,6 +1,6 @@
 == README
 
-Super quick guide for the server setup which works with Ubuntu 14.04 (details are covered in [this](http://karolgalanciak.com/blog/2014/07/10/automate-to-the-max-instant-ubuntu-server-setup-with-chef/) blog post)
+Super quick guide for the server setup which works with Ubuntu 14.04 (details are covered in [this](http://karolgalanciak.com/blog/2014/07/10/automate-to-the-max-instant-ubuntu-server-setup-with-chef/) blog post). Heavily inspired by [https://github.com/TalkingQuickly/rails-server-template](https://github.com/TalkingQuickly/rails-server-template) .
 
 * Clone repository
 

@@ -42,11 +42,13 @@ end
 # path to ssh config
 sshd_config = '/etc/ssh/sshd_config'
 
+ssh_port = node['security']['ssh_port']
+
 # changes to make to the config file
 seds = [
-  's/^#PasswordAuthentication yes/PasswordAuthentication no/g',
   's/^X11Forwarding yes/X11Forwarding no/g',
-  's/^UsePAM yes/UsePAM no/g'
+  's/^UsePAM yes/UsePAM no/g',
+  "s/^Port 22/Port #{ssh_port}/g",
 ]
 
 bash 'ssh hardening' do
@@ -56,19 +58,33 @@ bash 'ssh hardening' do
   EOC
 end
 
-service 'ssh' do
-  action :restart
-end
+# this one doesn't work on Ubuntu 14.04
+
+# service 'ssh' do
+#   action :restart
+# end
 
 # now allow SSH traffic through the firewall and restart SSH
 # unless otherwise specified, block everything
+# allow port 80 also for nginx
 bash "opening ufw for ssh traffic" do
   user "root"
   code <<-EOC
   ufw default deny
   ufw allow 22
+  ufw allow #{ssh_port}
+  ufw allow 80
   ufw --force enable
   EOC
+end
+
+if node['firewall_allowed_ports']
+  node['firewall_allowed_ports'].each do |port|
+    bash "allow #{port} port" do
+      user "root" 
+      code "ufw allow #{port}"
+    end
+  end
 end
 
 

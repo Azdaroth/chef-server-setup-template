@@ -2,8 +2,8 @@ site :opscode
 
 cookbook 'build-essential', git: 'https://github.com/opscode-cookbooks/build-essential'
 cookbook 'sudo', git: 'https://github.com/opscode-cookbooks/sudo.git'
-cookbook 'basic-security-tlq', git: 'git@github.com:TalkingQuickly/basic_security-tlq.git'
-cookbook 'look-and-feel-tlq', git: 'git@github.com:TalkingQuickly/look_and_feel-tlq.git'
+cookbook 'basic-security-tlq', git: 'https://github.com/Azdaroth/basic_security-tlq'
+cookbook 'look-and-feel-tlq', git: 'https://github.com/Azdaroth/look_and_feel-tlq'
 cookbook 'users', git: 'https://github.com/opscode-cookbooks/users.git'
 cookbook 'chef-solo-search', git: 'https://github.com/edelight/chef-solo-search'
 
@@ -24,6 +24,4 @@ cookbook "elasticsearch", git: "https://github.com/elasticsearch/cookbook-elasti
 
 cookbook "ssh_key_gen", git: "https://github.com/Azdaroth/ssh_key_gen-cookbook"
 cookbook "monit_configs", git: "https://github.com/Azdaroth/monit_configs-cookbook"
-cookbook "look-and-feel-modified", git: "https://github.com/Azdaroth/look-and-feel-modified"
 cookbook "help-nginx-passenger", git: "https://github.com/Azdaroth/help-nginx-passenger-cookbook"
-cookbook "basic-security-modified", git: "https://github.com/Azdaroth/basic-security-modified-cookbook"
