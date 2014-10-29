@@ -101,7 +101,7 @@
     "monit_configs": {
       "locked_version": "0.0.1",
       "git": "https://github.com/Azdaroth/monit_configs-cookbook",
-      "ref": "a72aff8c916741c63173e01523c4bc7e328f684b"
+      "ref": "dc575b085ed5c4b4514309df592da19049274fb9"
     },
     "help-nginx-passenger": {
       "locked_version": "0.0.1",
