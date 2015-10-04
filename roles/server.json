@@ -27,7 +27,7 @@
   "run_list": [
     "openssl",
     "build-essential",
-    "chef-solo-search",    
+    "chef-solo-search",
     "users::sysadmins",
     "sudo",
     "ssh_key_gen",

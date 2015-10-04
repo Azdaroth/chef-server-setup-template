@@ -13,7 +13,7 @@ cookbook 'monit_configs-tlq', git: 'git@github.com:TalkingQuickly/monit_configs-
 cookbook 'monit-tlq', git: 'git@github.com:TalkingQuickly/monit-tlq.git', branch: 'master'
 cookbook 'rails_gem_dependencies-tlq', git: 'git@github.com:TalkingQuickly/rails_gem_dependencies-tlq.git'
 
-cookbook 'nginx', git: 'https://github.com/opscode-cookbooks/nginx'
+cookbook 'nginx_passenger-cookbook', git: 'https://github.com/ewr/nginx_passenger-cookbook'
 cookbook 'postgresql', git: 'https://github.com/jackpine/postgresql/', branch: 'ubuntu1404'
 cookbook 'mongodb', git: "https://github.com/edelight/chef-mongodb"
 cookbook "rvm", git: "https://github.com/fnichol/chef-rvm"
@@ -24,5 +24,4 @@ cookbook "elasticsearch", git: "https://github.com/elasticsearch/cookbook-elasti
 
 cookbook "ssh_key_gen", git: "https://github.com/Azdaroth/ssh_key_gen-cookbook"
 cookbook "monit_configs", git: "https://github.com/Azdaroth/monit_configs-cookbook"
-cookbook "help-nginx-passenger", git: "https://github.com/Azdaroth/help-nginx-passenger-cookbook"
 cookbook "apt", git: "https://github.com/chef-cookbooks/apt"

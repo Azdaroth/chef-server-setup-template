@@ -4,21 +4,23 @@
   "default_attributes": {
     "rvm": {
       "group_users": ["deploy"],
-      "default_ruby": "ruby-2.1.2",
+      "default_ruby": "ruby-2.1.6",
       "rubies": [
         {
-          "version": "ruby-2.1.0",
-          "rubygems_version": "2.1.0"
+          "version": "ruby-2.1.6",
+          "rubygems_version": "2.2.2"
         },
         {
-          "version": "ruby-2.1.2",
-          "rubygems_version": "2.1.0"
+          "version": "ruby-2.2.2",
+          "rubygems_version": "2.2.2"
         }
       ],
-      "gems": { 
-        "ruby-2.1.2": [
-          { "name": "bundler", "version": "1.6.0" },
-          { "name": "passenger", "version": "4.0.45" }
+      "gems": {
+        "ruby-2.1.6": [
+          { "name": "bundler", "version": "1.10.6" }
+        ],
+        "ruby-2.2.2": [
+          { "name": "bundler", "version": "1.10.6" }
         ]
       }
     }

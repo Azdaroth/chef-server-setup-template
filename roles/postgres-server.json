@@ -3,7 +3,7 @@
   "description": "Postgres database server",
   "default_attributes": {
     "postgresql": {
-      "version": "9.3",
+      "version": "9.4",
       "initdb_locale": "en_US.UTF-8",
       "config": {
         "ssl": "false"
