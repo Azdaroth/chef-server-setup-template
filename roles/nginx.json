@@ -11,7 +11,7 @@
    },
    "json_class": "Chef::Role",
    "run_list": [
-      "nginx_passenger-cookbook"
+      "nginx_passenger"
    ],
    "chef_type": "role",
    "override_attributes": {
