@@ -17,10 +17,14 @@
       ],
       "gems": {
         "ruby-2.1.6": [
-          { "name": "bundler", "version": "1.10.6" }
+          { "name": "bundler", "version": "1.10.6" },
+          { "name": "passenger", "version": "4.0.59" },
+          { "name": "backup", "version": "4.2.0" }
         ],
         "ruby-2.2.2": [
-          { "name": "bundler", "version": "1.10.6" }
+          { "name": "bundler", "version": "1.10.6" },
+          { "name": "passenger", "version": "4.0.59" },
+          { "name": "backup", "version": "4.2.0" }
         ]
       }
     }

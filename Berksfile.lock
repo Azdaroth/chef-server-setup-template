@@ -56,9 +56,9 @@
       "ref": "86d443f34b93f59dc7a4ed7e51f46a42b2c79eb1"
     },
     "nginx": {
-      "locked_version": "2.7.3",
+      "locked_version": "2.7.6",
       "git": "https://github.com/opscode-cookbooks/nginx",
-      "ref": "d58074b87ca41418bacaa9444579d61b0500cf36"
+      "ref": "e36944b0dac1f21044a4f0d01fc566023325cfde"
     },
     "postgresql": {
       "locked_version": "3.4.1",
@@ -102,11 +102,6 @@
       "locked_version": "0.0.1",
       "git": "https://github.com/Azdaroth/monit_configs-cookbook",
       "ref": "eda48ea5304b22b247ebabbbc71de5623db9b59d"
-    },
-    "help-nginx-passenger": {
-      "locked_version": "0.0.1",
-      "git": "https://github.com/Azdaroth/help-nginx-passenger-cookbook",
-      "ref": "7abf3f07393f7feec8f19b5e168078e98873f5ab"
     },
     "apt": {
       "locked_version": "2.3.8"

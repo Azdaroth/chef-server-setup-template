@@ -1,3 +1,4 @@
+chef_api :config
 site :opscode
 
 cookbook 'build-essential', git: 'https://github.com/opscode-cookbooks/build-essential'
@@ -13,7 +14,7 @@ cookbook 'monit_configs-tlq', git: 'git@github.com:TalkingQuickly/monit_configs-
 cookbook 'monit-tlq', git: 'git@github.com:TalkingQuickly/monit-tlq.git', branch: 'master'
 cookbook 'rails_gem_dependencies-tlq', git: 'git@github.com:TalkingQuickly/rails_gem_dependencies-tlq.git'
 
-cookbook 'nginx_passenger-cookbook', git: 'https://github.com/ewr/nginx_passenger-cookbook'
+cookbook 'nginx', git: 'https://github.com/opscode-cookbooks/nginx'
 cookbook 'postgresql', git: 'https://github.com/jackpine/postgresql/', branch: 'ubuntu1404'
 cookbook 'mongodb', git: "https://github.com/edelight/chef-mongodb"
 cookbook "rvm", git: "https://github.com/fnichol/chef-rvm"
