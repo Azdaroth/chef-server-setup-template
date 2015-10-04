@@ -15,6 +15,7 @@ cookbook 'monit-tlq', git: 'git@github.com:TalkingQuickly/monit-tlq.git', branch
 cookbook 'rails_gem_dependencies-tlq', git: 'git@github.com:TalkingQuickly/rails_gem_dependencies-tlq.git'
 
 cookbook 'nginx', git: 'https://github.com/opscode-cookbooks/nginx'
+cookbook "help-nginx-passenger", git: "https://github.com/Azdaroth/help-nginx-passenger-cookbook"
 cookbook 'postgresql', git: 'https://github.com/jackpine/postgresql/', branch: 'ubuntu1404'
 cookbook 'mongodb', git: "https://github.com/edelight/chef-mongodb"
 cookbook "rvm", git: "https://github.com/fnichol/chef-rvm"
