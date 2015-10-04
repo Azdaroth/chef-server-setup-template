@@ -25,3 +25,4 @@ cookbook "elasticsearch", git: "https://github.com/elasticsearch/cookbook-elasti
 cookbook "ssh_key_gen", git: "https://github.com/Azdaroth/ssh_key_gen-cookbook"
 cookbook "monit_configs", git: "https://github.com/Azdaroth/monit_configs-cookbook"
 cookbook "help-nginx-passenger", git: "https://github.com/Azdaroth/help-nginx-passenger-cookbook"
+cookbook "apt", git: "https://github.com/chef-cookbooks/apt"

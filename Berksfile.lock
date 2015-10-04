@@ -124,13 +124,16 @@
       "locked_version": "1.5.10"
     },
     "yum": {
-      "locked_version": "3.1.4"
+      "locked_version": "3.2.2"
     },
     "yum-epel": {
-      "locked_version": "0.3.4"
+      "locked_version": "0.5.1"
     },
     "openssl": {
-      "locked_version": "1.1.0"
+      "locked_version": "2.0.0"
+    },
+    "chef-sugar": {
+      "locked_version": "2.3.0"
     },
     "python": {
       "locked_version": "1.4.6"
@@ -140,9 +143,6 @@
     },
     "xml": {
       "locked_version": "1.2.6"
-    },
-    "chef-sugar": {
-      "locked_version": "2.0.0"
     },
     "monit": {
       "locked_version": "0.7.1"
