@@ -6,8 +6,8 @@
       "users": ["deploy"],
       // everyone in the group sysadmin gets sudo rights
       "groups": ["sysadmin"],
-      "passwordless": false
-    } 
+      "passwordless": "/usr/bin/monit, /etc/monit/monitrc"
+    }
   },
   "monit": {
     "notify_emails" : ["email@example.com"],
